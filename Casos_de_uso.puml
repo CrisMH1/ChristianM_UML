@@ -20,5 +20,11 @@ usecase "Pedir comida" as pedir
 (Cancelar pedido) --> (Devolver pedido) : <<include>>
 (Acceder) <-- (Registrarse) : <<extend>>
 
+(Pagar)<-- (Pagar con tarjeta)
+(Pagar)<-- (Pagar en efectivo)
+
+:Cliente: -- (Reservar vuelo)
+:Cliente VIP: -- (Elegir asientos)
+
 
 @enduml
