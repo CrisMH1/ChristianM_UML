@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+:Actor: -- (Mostrar menú)
+
+
+
+@enduml
