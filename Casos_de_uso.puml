@@ -43,5 +43,10 @@ left to right direction
 (Pagar) <-- (Pagar con tarjeta)
 (Pagar) <-- (Pagar con transferencia)
 
+:Ciudadano: -- (Registrar entrada)
+:Ciudadano extranjero: -- (Tomar huellas)
+(Tomar huellas) --> (Registrar entrada) : <<extend>>
+:Ciudadano: <-- :Ciudadano extranjero:
+
 
 @enduml
