@@ -1,8 +1,17 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-:Actor: -- (Mostrar menú)
+left to right direction
+package Acciones{
+usecase "Mostrar menú" as menu
+usecase "Pedir comida" as pedir
 
+}
+
+:Cliente: -- menu
+:Cliente: -- pedir
+ (Entregar comida)-- :Restaurante:
+ menu -- :Restaurante:
 
 
 @enduml
