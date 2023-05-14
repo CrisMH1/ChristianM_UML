@@ -12,6 +12,12 @@ usecase "Pedir comida" as pedir
 :Cliente: -- pedir
  (Entregar comida)-- :Restaurante:
  menu -- :Restaurante:
+ 
+ left to right direction
+:Cliente: -- (Confirmar pedido)
+:Cliente: -- (Cancelar pedido)
+(Confirmar pedido) --> (Devolver pedido) : <<include>>
+(Cancelar pedido) --> (Devolver pedido) : <<include>>
 
 
 @enduml
