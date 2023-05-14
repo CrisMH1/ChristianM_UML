@@ -26,5 +26,13 @@ usecase "Pedir comida" as pedir
 :Cliente: -- (Reservar vuelo)
 :Cliente VIP: -- (Elegir asientos)
 
+left to right direction
+:Cliente: -- (Meter dinero)
+:Cliente: -- (Pedir azucar)
+:Cliente: -- (Pedir Producto)
+:Cliente: -- (Cancelar)
+(Cancelar) -->(Devolver dinero) : <<include>>
+(Pedir Producto) --> (Devolver dinero) : <<include>>
+
 
 @enduml
