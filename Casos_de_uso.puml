@@ -34,5 +34,14 @@ left to right direction
 (Cancelar) -->(Devolver dinero) : <<include>>
 (Pedir Producto) --> (Devolver dinero) : <<include>>
 
+left to right direction
+:new Actor: -- (Identificarse)
+:new Actor: -- (Pagar)
+:new Actor: -- (elegir mensajero)
+:new Actor: -- (Confirmar)
+(Identificarse) <--(Registrarse) : <<extend>>
+(Pagar) <-- (Pagar con tarjeta)
+(Pagar) <-- (Pagar con transferencia)
+
 
 @enduml
