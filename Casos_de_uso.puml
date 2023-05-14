@@ -18,6 +18,7 @@ usecase "Pedir comida" as pedir
 :Cliente: -- (Cancelar pedido)
 (Confirmar pedido) --> (Devolver pedido) : <<include>>
 (Cancelar pedido) --> (Devolver pedido) : <<include>>
+(Acceder) <-- (Registrarse) : <<extend>>
 
 
 @enduml
